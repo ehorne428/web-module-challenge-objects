@@ -64,7 +64,7 @@ function addRating( arr, name, rating, feedback){
   arr.push({name, rating, feedback})
   return arr;
 }
-console.log(addRating(reviews, 'Emily', '5', 'The food was so delicious, especially the dessert'));
+console.log(addRating(reviews, 'Emily', '5', 'The food was so delicious, especially the dessert!'));
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
@@ -101,10 +101,11 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
+function getLastReview(array) {
+  const last = array[array.length-1];
+   return `${last.name} and gave the restaurant a ${last.rating} and their feedback was: ${last.feedback}`;
   } 
-
+console.log(getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
