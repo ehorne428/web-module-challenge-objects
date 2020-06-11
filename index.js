@@ -7,7 +7,6 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
 function createMenuItem(name, cost, category){
-  function createMenuItem(name, cost, category){
     return {name, cost, category};
 }
 
@@ -58,6 +57,7 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 4: Console.log just Julius' feedback */
 
+ console.log((reviews[5].feedback));
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
@@ -152,5 +152,4 @@ The returned object should have the following characteristics:
 
 function carMaker(/* code here */) {
     /* code here */
-    
 }
